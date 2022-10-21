@@ -1,0 +1,242 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+* {
+    font-family: $font-family-sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.small-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+
+        .logo {
+            a {
+                font-size: 20px;
+                font-weight: 700;
+                text-decoration: none;
+                color: #000;
+            }
+        }
+        
+        ul {
+            list-style: none;
+
+            li {
+                display: inline-block;
+                margin-right: 10px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: #333;
+                }
+            }
+        }
+    }
+}
+
+.alert {
+    width: 100%;
+    padding: 10px;
+    background-color: #d90000;
+    color: #fff;
+    ul {
+        list-style: none;
+    }
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.form-item {
+    margin-bottom: 10px;
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+
+    .text-input {
+        width: 100%;
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    textarea {
+        width: 100%;
+        resize: none;
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+.form-check-item {
+    margin-bottom: 10px;
+    label {
+        font-size: 14px;
+    }
+}
+
+.form-submit-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button[type="submit"] {
+        border: none;
+        background-color: #333;
+        color: #fff;
+        padding: 8px 12px;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}
+
+.auth-page {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 1px solid #eee;
+    padding: 20px;
+
+    h1 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+}
+
+.list-page {
+    width: 100%;
+    .items {
+        .item {
+            display: flex;
+            text-decoration: none;
+            color: #000;
+            margin-top: 20px;
+            border-bottom: 1px dashed #ddd;
+            padding-bottom: 10px;
+
+            .image {
+                margin-right: 10px;
+                img {
+                    width: 220px;
+                    height: auto;
+                }
+            }
+
+            .title {
+                display: block;
+                font-size: 22px;
+                font-weight: 700;
+                margin: 10px 0;
+            }
+
+            .summary {
+                font-size: 16px;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;  
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+.detail-page {
+    width: 100%;
+    .title {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .image {
+        width: 100%;
+        margin-bottom: 20px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .info {
+        margin-bottom: 10px;
+        time {
+            font-size: 14px;
+            font-weight: 400;
+            color: #333;
+        }
+    }
+    .summary {
+        display: block;
+        font-size: 18px;
+        line-height: 28px;
+        color: #888;
+        margin-bottom: 20px;
+    }
+    .content {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+    .comments {
+        margin-bottom: 20px;
+        .comments-list {
+            display: block;
+            width: 100%;
+            .title {
+                font-size: 22px;
+                font-weight: 700;
+            }
+            .item {
+                display: block;
+                background-color: #f2f2f2;
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                .name {
+                    display: block;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+                .body {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+}
